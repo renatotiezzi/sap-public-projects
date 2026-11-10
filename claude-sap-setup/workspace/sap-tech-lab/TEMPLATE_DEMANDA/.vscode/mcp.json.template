@@ -1,0 +1,30 @@
+{
+  // Template sanitizado; a configuracao ativa fica em .vscode/mcp.json.
+  "inputs": [
+    {
+      "id": "sapUsername",
+      "type": "promptString",
+      "description": "Usuario SAP"
+    },
+    {
+      "id": "sapPassword",
+      "type": "promptString",
+      "description": "Senha SAP",
+      "password": true
+    }
+  ],
+  "servers": {
+    "sap_mcp_client_<CLIENT>": {
+      "type": "stdio",
+      "command": "<CAMINHO_ABSOLUTO_PARA_O_EXECUTAVEL_MCP>",
+      "env": {
+        "SAP_URL": "<https://SEU_HOST:PORTA>",
+        "SAP_USERNAME": "${input:sapUsername}",
+        "SAP_PASSWORD": "${input:sapPassword}",
+        "SAP_CLIENT": "<CLIENT>",
+        "SAP_LANGUAGE": "en",
+        "TLS_REJECT_UNAUTHORIZED": "0"
+      }
+    }
+  }
+}

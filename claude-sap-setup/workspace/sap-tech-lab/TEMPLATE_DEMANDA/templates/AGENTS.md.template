@@ -1,0 +1,34 @@
+# AGENTS.md (template genérico)
+
+> Coloque este arquivo na raiz do repositório novo. Descreve, de forma
+> agnóstica, o modelo de trabalho para qualquer assistente de IA (Copilot,
+> Claude, etc.). Ajuste os placeholders `<...>`.
+
+## Modelo de trabalho
+
+- Cada demanda vive em `GAP_<numero>/` ou `TICKET_<numero>/` isolada.
+- Fluxo erro → correção com rastreabilidade 1:1 (ver
+  `.github/copilot-instructions.md` e
+  `.github/instructions/error-correction-workflow.instructions.md`).
+- Baseline em `03_OBJETOS_ORIGINAIS/` é imutável.
+
+## Checklist de segurança (obrigatório)
+
+- Sem usuário/senha/API key hardcoded.
+- Sem breakpoints que parem a execução.
+- Sem URLs privadas, dados de cliente ou informações corporativas no repositório.
+
+## Ferramentas MCP (opcional)
+
+Se usar um servidor MCP (ex.: ABAP), configure-o em `.vscode/mcp.json` a partir
+de `.vscode/mcp.json.template`. Nunca cometa credenciais reais.
+
+Modo de uso recomendado do MCP: **consulta/leitura** (inspeção de objetos,
+where-used, preview de dados, busca em documentação). Operações de
+escrita/ativação em ambiente produtivo/cliente devem ser aplicadas manualmente
+pelo responsável no sistema correto.
+
+## Convenções de nomenclatura
+
+Ver `.github/instructions/abap.instructions.md` para prefixos de objeto e
+variáveis (ajuste `Z<PREFIXO>` ao seu projeto).

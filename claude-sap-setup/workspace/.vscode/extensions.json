@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "anthropic.claude-code",
+    "larshp.vscode-abap",
+    "murbani.vscode-abap-remote-fs",
+    "harieprasad.abap-mcp",
+    "hudakf.cds",
+    "sapse.sap-ux-fiori-tools-extension-pack",
+    "github.vscode-pull-request-github",
+    "github.copilot",
+    "github.copilot-chat",
+    "ms-vscode.powershell"
+  ]
+}

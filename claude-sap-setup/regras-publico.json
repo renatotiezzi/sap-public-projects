@@ -1,0 +1,137 @@
+{
+  "versao": 1,
+  "descricao": "O que nunca pode ir ao repositório público do SETUP: cliente, consultoria, autor, caminho pessoal, e-mail e segredo. Um nome novo = uma linha em termos.",
+  "termos": [
+    {
+      "termo": "lucy",
+      "parcial": true,
+      "motivo": "ferramenta interna de consultoria"
+    },
+    {
+      "termo": "delaware",
+      "parcial": true,
+      "motivo": "consultoria"
+    },
+    {
+      "termo": "dlw",
+      "motivo": "sigla da consultoria"
+    },
+    {
+      "termo": "gsinet",
+      "parcial": true,
+      "motivo": "domínio de rede da empresa"
+    },
+    {
+      "termo": "tiezzi",
+      "parcial": true,
+      "motivo": "nome, usuário e conta do autor"
+    },
+    {
+      "termo": "vivara",
+      "parcial": true,
+      "motivo": "cliente"
+    },
+    {
+      "termo": "osta",
+      "motivo": "projeto de cliente"
+    },
+    {
+      "termo": "continental",
+      "motivo": "cliente"
+    },
+    {
+      "termo": "lupo",
+      "motivo": "cliente"
+    },
+    {
+      "termo": "tellerina",
+      "parcial": true,
+      "motivo": "cliente"
+    },
+    {
+      "termo": "rievo",
+      "parcial": true,
+      "motivo": "cliente"
+    },
+    {
+      "termo": "bolepix",
+      "parcial": true,
+      "motivo": "projeto de cliente"
+    },
+    {
+      "termo": "nosso numero",
+      "motivo": "projeto de cliente"
+    },
+    {
+      "termo": "nosso número",
+      "motivo": "projeto de cliente"
+    },
+    {
+      "termo": "ghd",
+      "motivo": "sistema SAP de consultoria"
+    },
+    {
+      "termo": "digibee",
+      "parcial": true,
+      "motivo": "plataforma do cenário de um cliente"
+    },
+    {
+      "termo": "Capta",
+      "exato": true,
+      "motivo": "sistema do cenário de um cliente (com maiúscula; 'capta', o verbo, é livre)"
+    }
+  ],
+  "padroes": [
+    {
+      "nome": "caminho de perfil do Windows",
+      "regex": "[A-Za-z]:[\\\\/]+Users[\\\\/]+[^\\\\/\\s\"'`<>]+",
+      "flags": "i"
+    },
+    {
+      "nome": "pasta de OneDrive de empresa",
+      "regex": "OneDrive - [A-Za-z]",
+      "flags": ""
+    },
+    {
+      "nome": "e-mail",
+      "regex": "[A-Za-z0-9._%+-]+@(?:[A-Za-z0-9-]+\\.)+[A-Za-z]{2,}",
+      "flags": ""
+    }
+  ],
+  "permitidos": ["renatotiezzi/sap-public-projects"],
+  "emailsLivres": [
+    "@example.com",
+    "@example.org",
+    "@example.net",
+    "git@github.com",
+    "noreply.github.com",
+    "@UI."
+  ],
+  "segredos": [
+    {
+      "nome": "chave privada",
+      "regex": "-----BEGIN [A-Z ]*PRIVATE KEY-----",
+      "flags": ""
+    },
+    {
+      "nome": "token do GitHub",
+      "regex": "\\b(?:ghp|gho|ghu|ghs|ghr)_[A-Za-z0-9]{30,}\\b|\\bgithub_pat_[A-Za-z0-9_]{40,}\\b",
+      "flags": ""
+    },
+    {
+      "nome": "chave de acesso da AWS",
+      "regex": "\\bAKIA[0-9A-Z]{16}\\b",
+      "flags": ""
+    },
+    {
+      "nome": "client secret preenchido",
+      "regex": "[\"']?client_?secret[\"']?\\s*[:=]\\s*[\"'][^\"'<>{}\\s$]{12,}[\"']",
+      "flags": "i"
+    },
+    {
+      "nome": "token do Slack",
+      "regex": "\\bxox[abposr]-[A-Za-z0-9-]{10,}",
+      "flags": ""
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "setup",
+  "owner": {
+    "name": "SETUP"
+  },
+  "metadata": {
+    "description": "Os MODs do modo de trabalho para o Claude Code."
+  },
+  "plugins": [
+    {
+      "name": "passos",
+      "source": "./passos",
+      "description": "O painel com os passos do projeto da conversa: o docs/acompanhamento/PASSOS.json da pasta do projeto, achada pelo cwd."
+    }
+  ]
+}

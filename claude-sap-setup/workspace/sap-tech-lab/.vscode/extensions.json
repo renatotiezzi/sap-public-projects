@@ -1,0 +1,11 @@
+{
+  // Extensões recomendadas para reproduzir este modelo de trabalho.
+  // O VS Code sugere instalá-las ao abrir o workspace.
+  "recommendations": [
+    "github.copilot",
+    "github.copilot-chat",
+    "larshp.vscode-abap",
+    "murbani.vscode-abap-remote-fs",
+    "sapse.sap-ux-fiori-tools-extension-pack"
+  ]
+}

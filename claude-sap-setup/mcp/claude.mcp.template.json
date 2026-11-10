@@ -1,0 +1,11 @@
+{
+  "_comoUsar": "Entradas de MCP para o ~/.claude.json (chave mcpServers). O instalar.js -Mcp junta as que estiverem aqui. As do Speed Up e do Sps v1 não ficam aqui: cada app grava a sua (Speed Up: Conectar IA; Sps v1: o próprio app grava no Claude Desktop e o instalar.js copia para o Claude Code). A forma da entrada do Speed Up fica abaixo só para conferência.",
+  "mcpServers": {},
+  "_formaDoSpeedup": {
+    "speedup": {
+      "type": "stdio",
+      "command": "<node.exe>",
+      "args": ["--disable-warning=ExperimentalWarning", "<pasta do Speed Up>\\packages\\stdio-bridge\\dist\\index.js", "--token-file", "%LOCALAPPDATA%\\SpeedUp\\hosts\\claude-code.token", "--data-root", "%LOCALAPPDATA%\\SpeedUp"]
+    }
+  }
+}

@@ -1,0 +1,13 @@
+# Segredos e configuração local
+.env
+*.env
+*.local
+segredos/
+credenciais/
+.vscode/mcp.json
+.claude/settings.local.json
+.claude/worktrees/
+
+# Gerado
+node_modules/
+*.log

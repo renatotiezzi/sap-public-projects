@@ -1,0 +1,6 @@
+{
+  "_comoUsar": "Um item por projeto do espaço. pasta: o caminho relativo à raiz do espaço. board: o número do GitHub Project (a gestão por issue) ou null (o status no docs/STATUS.md). motor: true quando o status passa pelo motor de testes do Speed Up.",
+  "projetos": [
+    { "nome": "SAP Tech Lab", "pasta": "sap-tech-lab", "board": null, "motor": false }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "_comoUsar": "Cole no settings.json do USUÁRIO do VS Code (não no do espaço, que vai ao Git). Um item por sistema. A senha: deixe vazia e o abapfs pede na conexão.",
+  "abapfs.remote": {
+    "<SID>": {
+      "url": "https://<host>:<porta>",
+      "username": "<usuario>",
+      "password": "",
+      "client": "<mandante>",
+      "language": "pt",
+      "allowSelfSigned": true
+    }
+  },
+  "abapfs.mcpServer.autoStart": true
+}

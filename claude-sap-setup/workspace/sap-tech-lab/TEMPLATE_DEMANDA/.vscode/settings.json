@@ -1,0 +1,14 @@
+{
+  // Configurações portáveis do workspace (sem dados sensíveis).
+  "files.eol": "\n",
+  "files.encoding": "utf8",
+  "editor.formatOnSave": false,
+  "editor.rulers": [120],
+  // Habilita instruções/prompts/agentes personalizados do Copilot no repositório.
+  "chat.promptFiles": true,
+  "github.copilot.chat.codeGeneration.useInstructionFiles": true,
+  // Mantém arquivos de trabalho legíveis (dumps, logs) sem quebra automática.
+  "[abap]": {
+    "files.trimTrailingWhitespace": false
+  }
+}

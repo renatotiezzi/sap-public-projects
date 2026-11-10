@@ -1,0 +1,6 @@
+{
+  "name": "passos",
+  "version": "0.2.0",
+  "description": "Painel ao lado do chat com os passos do projeto da conversa (docs/acompanhamento/PASSOS.json, achado pelo cwd): estado, quem age e a prova",
+  "types": "./types/index.d.ts"
+}
